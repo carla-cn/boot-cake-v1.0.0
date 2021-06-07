@@ -1,0 +1,137 @@
+@charset 'utf-8';
+@import './color.scss';
+@import './common.scss';
+$headerBgColor: $cakeWhite;
+$headerTextColor: $cakeDeepGray;
+$headerActiveColor: $cakeCoral;
+
+@media screen and (max-width: 992px) {
+    .cake-navbar {
+        height: 60rem / $s;
+        padding: 0 (25rem / $s) !important;
+        background-color: $headerBgColor !important;
+
+        // 蛋糕图标
+        .cake-navbar-brand {
+            padding: 0 !important;
+            padding-bottom: 8rem / $s !important;
+            font-size: 0;
+            vertical-align: top;
+            flex-grow: 1;
+        }
+
+        // 中英切换按钮
+        .cake-change-lang {
+            width: 26rem / $s;
+            height: 26rem / $s;
+            border: 1px solid $headerTextColor;
+            color: $headerTextColor;
+            line-height: 24rem / $s;
+            font-size: 12rem / $s;
+            text-align: center;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        // 折叠按钮
+        .cake-navbar-toggler {
+            border: 0;
+            padding: 0 0 (6rem / $s) (10rem / $s);
+
+            .cake-navbar-toggler-icon {
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+        }
+
+        // 折叠部分
+        .cake-collapse {
+            background-color: rgba(0, 0, 0, .1);
+            padding: 0 10px;
+            font-size: 18rem / $s;
+            z-index: 10;
+
+            // 下拉部分
+            .cake-header-brand-menu {
+                background-color: rgba(0, 0, 0, .1);
+
+                a {
+                    font-size: 18rem / $s;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .cake-navbar {
+        height: 80px;
+        padding: 0 30px !important;
+        background-color: $headerBgColor !important;
+        font-size: 16px;
+
+        .cake-active {
+            color: $headerActiveColor !important;
+        }
+
+        // 蛋糕图标
+        .cake-navbar-brand {
+            padding: 0 !important;
+            padding-bottom: 8px !important;
+            font-size: 0;
+            vertical-align: top;
+            flex-grow: 1;
+        }
+
+        // 中英切换按钮
+        .cake-change-lang {
+            width: 30px;
+            height: 30px;
+            border: 1px solid $headerTextColor;
+            margin-left: 10px;
+            color: $headerTextColor;
+            line-height: 28px;
+            font-size: 12px;
+            text-align: center;
+            border-radius: 50%;
+            order: 1;
+            cursor: pointer;
+            &:hover {
+                color: $headerActiveColor;
+            }
+        }
+
+        // 折叠部分
+        .cake-collapse {
+            flex-grow: 0;
+            li {
+                padding: 0 50px;
+                .cake-nav-link {
+                    line-height: 80px;
+                    padding: 0;
+                    &:hover {
+                        text-decoration: none;
+                        color: $headerActiveColor;
+                    }
+                }
+                // 下拉部分
+                .cake-header-brand-menu {
+                    top: 76px;
+                    left: -40px;
+                    width: 218px;
+                    padding: 0;
+                    text-align: center;
+                    a {
+                        padding: 20px 0;
+                        color: $headerTextColor;
+                        font-size: 14px;
+                        &:hover {
+                            background-color: $headerActiveColor;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

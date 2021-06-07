@@ -1,0 +1,292 @@
+@charset 'utf-8';
+@import './color.scss';
+@import './common.scss';
+
+$footerTextColor: $cakeWhite;
+$footerENTextColor: $cakeDeepGray;
+$footerActiveColor: $cakeCoral;
+$footerTopBg: $cakemdBlack;
+$footerBottomBg: $cakeDeepBlack;
+
+@media screen and (max-width: 992px) {
+    footer {
+        font-size: 12rem / $s;
+
+        // 移动端消失的页尾部分
+        .cake-footer-none {
+            display: none;
+        }
+
+        // 页尾上部分
+        .cake-footer-top {
+            height: 180rem / $s;
+            background-color: $footerTopBg;
+            color: $footerTextColor;
+            .cake-footer-top-container {
+                // 联系我们
+                .cake-footer-contact {
+                    width: 200rem / $s;
+                    float: left;
+                    .cake-footer-title {
+                        margin-top: 15rem / $s;
+                        font-size: 16rem / $s;
+                    }
+                    .cake-footer-details {
+                        width: 200rem / $s;
+                    }
+                }
+                // 关注我们
+                .cake-footer-focus {
+                    width: 100rem / $s;
+                    float: right;
+                    padding-left: 46rem / $s;
+                    padding-top: 20rem / $s;
+                    .cake-footer-qrcode {
+                        img {
+                            width: 100rem / $s;
+                        }
+                        p {
+                            width: 100rem / $s;
+                            margin-top: 10rem / $s;
+                        }
+                    }
+                }
+
+            }
+        }
+        // 页尾下部分
+        .cake-footer-bottom {
+            height: 56rem / $s;
+            background-color: $footerBottomBg;
+            p {
+                margin-bottom: 0;
+                line-height: 56rem / $s;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    footer {
+
+        // 页尾上部分
+        .cake-footer-top {
+            height: 390px;
+            padding: 50px 0;
+            background-color: $footerTopBg;
+
+            .cake-footer-top-container {
+                color: $footerTextColor;
+
+                // 联系我们
+                .cake-footer-contact {
+                    height: 290px;
+                    border-right: 1px solid $footerENTextColor;
+
+                    h4 {
+                        &::after {
+                            content: 'Contact us';
+                            display: block;
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: $footerENTextColor;
+                        }
+                    }
+
+                    // 位置
+                    .cake-footer-address {
+                        margin: 50px 0;
+
+                        .cake-footer-title {
+                            font-weight: 400;
+
+                            &::before {
+                                display: inline-block;
+                                content: '';
+                                width: 25px;
+                                height: 30px;
+                                background: url(../images/footer/ico-address.png) no-repeat;
+                                background-size: 25px auto;
+                                margin-right: 16px;
+                            }
+                        }
+
+                        .cake-footer-details {
+                            padding-left: 38px;
+                            padding-top: 10px;
+                        }
+                    }
+
+                    // 电话
+                    .cake-footer-phone {
+                        margin: 50px 0;
+
+                        .cake-footer-title {
+                            font-weight: 400;
+
+                            &::before {
+                                display: inline-block;
+                                content: '';
+                                width: 25px;
+                                height: 30px;
+                                background: url(../images/footer/ico-hotline.png) no-repeat;
+                                background-size: 25px auto;
+                                margin-right: 16px;
+                            }
+                        }
+
+                        .cake-footer-details {
+                            padding-left: 38px;
+                            padding-top: 10px;
+                        }
+                    }
+                }
+
+                // 品牌
+                .cake-footer-brand {
+                    height: 290px;
+                    border-right: 1px solid $footerENTextColor;
+
+                    h4 {
+                        text-align: center;
+
+                        &::after {
+                            content: 'Brand';
+                            display: block;
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: $footerENTextColor;
+                        }
+                    }
+
+                    // 品牌item
+                    .cake-footer-branditem {
+                        margin: 50px 0;
+
+                        p {
+                            text-align: center;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: $footerActiveColor;
+                            }
+                        }
+                    }
+                }
+
+                // 产品
+                .cake-footer-product {
+                    height: 290px;
+                    border-right: 1px solid $footerENTextColor;
+
+                    h4 {
+                        text-align: center;
+
+                        &::after {
+                            content: 'Product';
+                            display: block;
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: $footerENTextColor;
+                        }
+                    }
+
+                    // 产品item
+                    .cake-footer-productitem {
+                        margin: 50px 0;
+
+                        p {
+                            text-align: center;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: $footerActiveColor;
+                            }
+                        }
+                    }
+                }
+
+                // 新闻
+                .cake-footer-news {
+                    height: 290px;
+                    border-right: 1px solid $footerENTextColor;
+
+                    h4 {
+                        text-align: center;
+
+                        &::after {
+                            content: 'News';
+                            display: block;
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: $footerENTextColor;
+                        }
+                    }
+
+                    // 产品item
+                    .cake-footer-newsitem {
+                        margin: 50px 0;
+
+                        p {
+                            text-align: center;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: $footerActiveColor;
+                            }
+                        }
+                    }
+                }
+
+                // 关注我们
+                .cake-footer-focus {
+                    h4 {
+                        text-align: center;
+
+                        &::after {
+                            content: 'Follow us';
+                            display: block;
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: $footerENTextColor;
+                        }
+                    }
+
+                    // 扫码关注
+                    .cake-footer-qrcode {
+                        margin: 50px 0;
+                        text-align: center;
+
+                        img {
+                            width: 100px;
+                        }
+
+                        p {
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        // 页尾下部分
+        .cake-footer-bottom {
+            height: 80px;
+            padding: 20px 0;
+            background-color: $footerBottomBg;
+            font-size: 12px;
+            color: $footerENTextColor;
+            p {
+                text-align: center;
+                a {
+                    color: $footerENTextColor;
+                    text-decoration: none;
+                    &:hover {
+                        color: $footerTextColor;
+                    }
+                }
+            }
+        }
+    }
+}

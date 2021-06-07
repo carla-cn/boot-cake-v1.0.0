@@ -1,0 +1,516 @@
+@charset 'utf-8';
+@import './color.scss';
+@import './common.scss';
+
+$indexTextColor: $cakeDeepGray;
+$indexTitleColor: $cakeBlack;
+$indexActiveColor: $cakeCoral;
+$indexBg1: $cakeWhite;
+$indexBg2: $cakeGrayWhite;
+
+@media screen and (max-width: 992px) {
+
+    // 给小屏设置正常的字体大小
+    body {
+        font-size: 14rem / $s;
+    }
+
+    // PC端的结构隐藏
+    .pc {
+        display: none;
+    }
+
+    // 产品
+    .cake-index-products {
+
+        // 标题
+        .cake-products-title {
+            margin-bottom: 20rem / $s;
+
+            h4 {
+                height: 28rem / $s;
+                text-align: center;
+                font-size: 20rem / $s;
+                color: $indexTitleColor;
+
+                &::after {
+                    content: 'Product';
+                    display: block;
+                    height: 16rem / $s;
+                    margin-top: 10rem / $s;
+                    font-size: 12rem / $s;
+                    color: $indexTextColor;
+                    text-align: center;
+                }
+            }
+        }
+
+        // 产品种类
+        .cake-products-category {
+            margin-top: 60rem / $s;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    // 新品
+    .cake-index-newproducts {
+
+        // 标题
+        .cake-newproducts-title {
+            margin-bottom: 20rem / $s;
+
+            h4 {
+                height: 28rem / $s;
+                text-align: center;
+                font-size: 20rem / $s;
+                color: $indexTitleColor;
+
+                &::after {
+                    content: 'New Product';
+                    display: block;
+                    height: 16rem / $s;
+                    margin-top: 10rem / $s;
+                    font-size: 12rem / $s;
+                    color: $indexTextColor;
+                    text-align: center;
+                }
+            }
+        }
+
+        // 内容
+        .cake-newproducts-details {
+            margin-top: 60rem / $s;
+
+            // 详情（不展示）
+            .cake-newproduct-info {
+                display: none;
+            }
+
+            // 图片
+            .cake-newproducts-image {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    // 品牌
+    .cake-index-brand {
+
+        // 标题
+        .cake-brand-title {
+            margin-bottom: 20rem / $s;
+
+            h4 {
+                height: 28rem / $s;
+                text-align: center;
+                font-size: 20rem / $s;
+                color: $indexTitleColor;
+
+                &::after {
+                    content: 'Brand';
+                    display: block;
+                    height: 16rem / $s;
+                    margin-top: 10rem / $s;
+                    font-size: 12rem / $s;
+                    color: $indexTextColor;
+                    text-align: center;
+                }
+            }
+        }
+
+        // 内容
+        .cake-brand-details {
+            margin-top: 60rem / $s;
+            font-size: 12rem / $s;
+            color: $indexTextColor;
+            text-align: center;
+
+            p {
+                padding: 30rem / $s;
+                margin: 0;
+            }
+
+            button {
+                border: 0;
+                outline: none;
+                width: 180rem / $s;
+                height: 30rem / $s;
+                padding: 0;
+                font-size: 14rem / $s;
+                color: $indexTextColor;
+                border-radius: 20rem / $s;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    // 移动端的结构隐藏
+    .mobile {
+        display: none;
+    }
+
+    // 产品
+    .cake-index-products {
+
+        // 标题
+        .cake-products-title {
+            margin-bottom: 50px;
+
+            h4 {
+                height: 40px;
+                text-align: center;
+                font-size: 28px;
+                color: $indexTitleColor;
+
+                &::after {
+                    content: 'Product';
+                    display: block;
+                    height: 16px;
+                    margin-top: 10px;
+                    font-size: 12px;
+                    color: $indexTextColor;
+                    text-align: center;
+                }
+            }
+        }
+
+        // 产品种类导航nav
+        .cake-products-category {
+
+            // 导航条
+            .cake-category-nav {
+                a {
+                    color: $indexTextColor;
+                    margin-right: 20px;
+
+                    &:hover {
+                        color: $indexActiveColor;
+                    }
+                }
+            }
+
+            // 内容
+            .cake-category-content {
+                margin-top: 50px;
+
+                .cake-row-1,
+                .cake-row-2 {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .pic {
+                        position: relative;
+                        width: 200px;
+                        height: 200px;
+                        transition: 1s;
+                        overflow: hidden;
+
+                        img {
+                            width: 200px;
+                        }
+
+                        .mask {
+                            display: none;
+                            position: absolute;
+                            top: 6px;
+                            left: 10px;
+                            width: 180px;
+                            height: 180px;
+                            background-color: rgba(255, 255, 255, .9);
+
+                            h5 {
+                                font-size: 18px;
+                                color: $indexActiveColor;
+                                text-align: center;
+                                margin-top: 40px;
+                            }
+
+                            p {
+                                content: '乳脂蛋糕';
+                                display: block;
+                                font-size: 12px;
+                                text-align: center;
+                                color: $indexTextColor;
+                                margin-top: 10px;
+                            }
+
+                            span {
+                                display: block;
+                                width: 40px;
+                                height: 40px;
+                                background: $indexActiveColor url(../images/index/products-icon.png) no-repeat center center;
+                                border-radius: 50%;
+                                margin-top: 30px;
+                                margin-left: 64px;
+                                cursor: pointer;
+
+                                &:hover {
+                                    background-color: #f26d5b;
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            box-shadow: 2px 5px 8px rgba(0, 0, 0, .3);
+
+                            img {
+                                width: 220px;
+                            }
+
+                            .mask {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+
+                .cake-row-2 {
+                    margin-top: 20px;
+                }
+
+            }
+        }
+    }
+
+    // 新品
+    .cake-index-newproducts {
+
+        // 标题
+        .cake-newproducts-title {
+            margin-bottom: 50px;
+
+            h4 {
+                height: 40px;
+                text-align: center;
+                font-size: 28px;
+                color: $indexTitleColor;
+
+                &::after {
+                    content: 'New Product';
+                    display: block;
+                    height: 16px;
+                    margin-top: 10px;
+                    font-size: 12px;
+                    color: $indexTextColor;
+                    text-align: center;
+                }
+            }
+        }
+
+        // 内容
+        .cake-newproducts-details {
+
+            // 详情
+            .cake-newproduct-info {
+                background-color: $indexBg2;
+                text-align: center;
+                color: $indexTextColor;
+
+                h4 {
+                    margin-top: 20px;
+                    font-weight: 400;
+                    font-size: 24px;
+                    color: $indexTitleColor;
+
+                    &::after {
+                        content: 'Chocolate velvet';
+                        display: block;
+                        margin-top: 10px;
+                        margin-bottom: 30px;
+                        font-size: 14px;
+                        color: $indexTextColor;
+                    }
+                }
+
+                span {
+                    i {
+                        font-family: 'icomoon';
+                        font-style: normal;
+                        margin: 2px;
+                        color: $indexActiveColor;
+                    }
+                }
+
+                p {
+                    margin-top: 30px;
+                }
+
+                button {
+                    width: 138px;
+                    height: 30px;
+                    margin-top: 30px;
+                    border: 1px solid $indexTextColor;
+                    color: $indexTextColor;
+                    border-radius: 15px;
+                    outline: none;
+
+                    &:hover {
+                        color: $indexActiveColor;
+                    }
+                }
+            }
+
+            // 图片
+            .cake-newproducts-image {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    // 品牌
+    .cake-index-brand {
+        height: 600px;
+
+        // 标题
+        .cake-brand-title {
+            margin-bottom: 50px;
+
+            h4 {
+                height: 40px;
+                text-align: center;
+                font-size: 28px;
+                color: $indexTitleColor;
+
+                &::after {
+                    content: 'Brand';
+                    display: block;
+                    height: 16px;
+                    margin-top: 10px;
+                    font-size: 12px;
+                    color: $indexTextColor;
+                    text-align: center;
+                }
+            }
+        }
+
+        // 内容
+        .cake-brand-details {
+            position: relative;
+
+            p {
+                position: absolute;
+                top: 78%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80%;
+                height: 140px;
+                background-color: $indexBg1;
+                padding-top: 20px;
+                text-align: center;
+                color: $indexTextColor;
+                line-height: 2;
+                box-sizing: border-box;
+            }
+
+            button {
+                position: absolute;
+                top: 440px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 200px;
+                height: 50px;
+                border: 0;
+                background-color: $indexBg2;
+                color: $indexTextColor;
+                font-size: 16px;
+                border-radius: 25px;
+                outline: none;
+
+                &:hover {
+                    background-color: $indexActiveColor;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    // 新闻
+    .cake-index-news {
+        background-color: $indexBg2;
+
+        // 标题
+        .cake-news-title {
+            margin-bottom: 50px;
+            padding-top: 50px;
+
+            h4 {
+                height: 40px;
+                text-align: center;
+                font-size: 28px;
+                color: $indexTitleColor;
+
+                &::after {
+                    content: 'News';
+                    display: block;
+                    height: 16px;
+                    margin-top: 10px;
+                    font-size: 12px;
+                    color: $indexTextColor;
+                    text-align: center;
+                }
+            }
+        }
+
+        // 内容
+        .cake-news-details {
+            padding-bottom: 60px;
+            .cake-card-title {
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom: 20px;
+
+                a {
+                    color: $indexTextColor;
+                    text-decoration: none;
+                }
+            }
+            .cake-card-text {
+                color: $indexTextColor;
+            }
+            .cake-card-link {
+                text-align: right;
+                a {
+                    color: $indexTextColor;
+                    text-decoration: none;
+                    &:hover {
+                        color: $indexActiveColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 大轮播横幅
+.cake-index-banner {
+    width: 100%;
+
+    img {
+        width: 100%;
+    }
+}
+
+// 单行文本超出省略
+.cake-one-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+// 多行文本超出省略
+.cake-more-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}

@@ -1,0 +1,383 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'icomoon';
+  src: url("../icomoon/fonts/icomoon.eot?lbv41h");
+  src: url("../icomoon/fonts/icomoon.eot?lbv41h#iefix") format("embedded-opentype"), url("../icomoon/fonts/icomoon.ttf?lbv41h") format("truetype"), url("../icomoon/fonts/icomoon.woff?lbv41h") format("woff"), url("../icomoon/fonts/icomoon.svg?lbv41h#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 21.3333333333px; } }
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 24px; } }
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px; } }
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 25.6px; } }
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 26.6666666667px; } }
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 27.6px; } }
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 28.2666666667px; } }
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 32px; } }
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 36px; } }
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 48px; } }
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px; } }
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 14px; }
+
+  .blank20 {
+    width: 100%;
+    height: 20px; }
+
+  .blank25 {
+    width: 100%;
+    height: 25px; } }
+@media screen and (max-width: 992px) {
+  .blank20 {
+    width: 100%;
+    height: 0.8rem; }
+
+  .blank25 {
+    width: 100%;
+    height: 1rem; } }
+@media screen and (max-width: 992px) {
+  body {
+    font-size: 0.56rem; }
+
+  .pc {
+    display: none; }
+
+  .cake-index-products .cake-products-title {
+    margin-bottom: 0.8rem; }
+    .cake-index-products .cake-products-title h4 {
+      height: 1.12rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #353535; }
+      .cake-index-products .cake-products-title h4::after {
+        content: 'Product';
+        display: block;
+        height: 0.64rem;
+        margin-top: 0.4rem;
+        font-size: 0.48rem;
+        color: #777777;
+        text-align: center; }
+  .cake-index-products .cake-products-category {
+    margin-top: 2.4rem; }
+    .cake-index-products .cake-products-category img {
+      width: 100%; }
+
+  .cake-index-newproducts .cake-newproducts-title {
+    margin-bottom: 0.8rem; }
+    .cake-index-newproducts .cake-newproducts-title h4 {
+      height: 1.12rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #353535; }
+      .cake-index-newproducts .cake-newproducts-title h4::after {
+        content: 'New Product';
+        display: block;
+        height: 0.64rem;
+        margin-top: 0.4rem;
+        font-size: 0.48rem;
+        color: #777777;
+        text-align: center; }
+  .cake-index-newproducts .cake-newproducts-details {
+    margin-top: 2.4rem; }
+    .cake-index-newproducts .cake-newproducts-details .cake-newproduct-info {
+      display: none; }
+    .cake-index-newproducts .cake-newproducts-details .cake-newproducts-image img {
+      width: 100%; }
+
+  .cake-index-brand .cake-brand-title {
+    margin-bottom: 0.8rem; }
+    .cake-index-brand .cake-brand-title h4 {
+      height: 1.12rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #353535; }
+      .cake-index-brand .cake-brand-title h4::after {
+        content: 'Brand';
+        display: block;
+        height: 0.64rem;
+        margin-top: 0.4rem;
+        font-size: 0.48rem;
+        color: #777777;
+        text-align: center; }
+  .cake-index-brand .cake-brand-details {
+    margin-top: 2.4rem;
+    font-size: 0.48rem;
+    color: #777777;
+    text-align: center; }
+    .cake-index-brand .cake-brand-details p {
+      padding: 1.2rem;
+      margin: 0; }
+    .cake-index-brand .cake-brand-details button {
+      border: 0;
+      outline: none;
+      width: 7.2rem;
+      height: 1.2rem;
+      padding: 0;
+      font-size: 0.56rem;
+      color: #777777;
+      border-radius: 0.8rem; } }
+@media screen and (min-width: 992px) {
+  .mobile {
+    display: none; }
+
+  .cake-index-products .cake-products-title {
+    margin-bottom: 50px; }
+    .cake-index-products .cake-products-title h4 {
+      height: 40px;
+      text-align: center;
+      font-size: 28px;
+      color: #353535; }
+      .cake-index-products .cake-products-title h4::after {
+        content: 'Product';
+        display: block;
+        height: 16px;
+        margin-top: 10px;
+        font-size: 12px;
+        color: #777777;
+        text-align: center; }
+  .cake-index-products .cake-products-category .cake-category-nav a {
+    color: #777777;
+    margin-right: 20px; }
+    .cake-index-products .cake-products-category .cake-category-nav a:hover {
+      color: #F8ADA3; }
+  .cake-index-products .cake-products-category .cake-category-content {
+    margin-top: 50px; }
+    .cake-index-products .cake-products-category .cake-category-content .cake-row-1,
+    .cake-index-products .cake-products-category .cake-category-content .cake-row-2 {
+      display: flex;
+      justify-content: space-between; }
+      .cake-index-products .cake-products-category .cake-category-content .cake-row-1 .pic,
+      .cake-index-products .cake-products-category .cake-category-content .cake-row-2 .pic {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        transition: 1s;
+        overflow: hidden; }
+        .cake-index-products .cake-products-category .cake-category-content .cake-row-1 .pic img,
+        .cake-index-products .cake-products-category .cake-category-content .cake-row-2 .pic img {
+          width: 200px; }
+        .cake-index-products .cake-products-category .cake-category-content .cake-row-1 .pic .mask,
+        .cake-index-products .cake-products-category .cake-category-content .cake-row-2 .pic .mask {
+          display: none;
+          position: absolute;
+          top: 6px;
+          left: 10px;
+          width: 180px;
+          height: 180px;
+          background-color: rgba(255, 255, 255, 0.9); }
+          .cake-index-products .cake-products-category .cake-category-content .cake-row-1 .pic .mask h5,
+          .cake-index-products .cake-products-category .cake-category-content .cake-row-2 .pic .mask h5 {
+            font-size: 18px;
+            color: #F8ADA3;
+            text-align: center;
+            margin-top: 40px; }
+          .cake-index-products .cake-products-category .cake-category-content .cake-row-1 .pic .mask p,
+          .cake-index-products .cake-products-category .cake-category-content .cake-row-2 .pic .mask p {
+            content: '乳脂蛋糕';
+            display: block;
+            font-size: 12px;
+            text-align: center;
+            color: #777777;
+            margin-top: 10px; }
+          .cake-index-products .cake-products-category .cake-category-content .cake-row-1 .pic .mask span,
+          .cake-index-products .cake-products-category .cake-category-content .cake-row-2 .pic .mask span {
+            display: block;
+            width: 40px;
+            height: 40px;
+            background: #F8ADA3 url(../images/index/products-icon.png) no-repeat center center;
+            border-radius: 50%;
+            margin-top: 30px;
+            margin-left: 64px;
+            cursor: pointer; }
+            .cake-index-products .cake-products-category .cake-category-content .cake-row-1 .pic .mask span:hover,
+            .cake-index-products .cake-products-category .cake-category-content .cake-row-2 .pic .mask span:hover {
+              background-color: #f26d5b; }
+        .cake-index-products .cake-products-category .cake-category-content .cake-row-1 .pic:hover,
+        .cake-index-products .cake-products-category .cake-category-content .cake-row-2 .pic:hover {
+          box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.3); }
+          .cake-index-products .cake-products-category .cake-category-content .cake-row-1 .pic:hover img,
+          .cake-index-products .cake-products-category .cake-category-content .cake-row-2 .pic:hover img {
+            width: 220px; }
+          .cake-index-products .cake-products-category .cake-category-content .cake-row-1 .pic:hover .mask,
+          .cake-index-products .cake-products-category .cake-category-content .cake-row-2 .pic:hover .mask {
+            display: block; }
+    .cake-index-products .cake-products-category .cake-category-content .cake-row-2 {
+      margin-top: 20px; }
+
+  .cake-index-newproducts .cake-newproducts-title {
+    margin-bottom: 50px; }
+    .cake-index-newproducts .cake-newproducts-title h4 {
+      height: 40px;
+      text-align: center;
+      font-size: 28px;
+      color: #353535; }
+      .cake-index-newproducts .cake-newproducts-title h4::after {
+        content: 'New Product';
+        display: block;
+        height: 16px;
+        margin-top: 10px;
+        font-size: 12px;
+        color: #777777;
+        text-align: center; }
+  .cake-index-newproducts .cake-newproducts-details .cake-newproduct-info {
+    background-color: #F5F5F5;
+    text-align: center;
+    color: #777777; }
+    .cake-index-newproducts .cake-newproducts-details .cake-newproduct-info h4 {
+      margin-top: 20px;
+      font-weight: 400;
+      font-size: 24px;
+      color: #353535; }
+      .cake-index-newproducts .cake-newproducts-details .cake-newproduct-info h4::after {
+        content: 'Chocolate velvet';
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-size: 14px;
+        color: #777777; }
+    .cake-index-newproducts .cake-newproducts-details .cake-newproduct-info span i {
+      font-family: 'icomoon';
+      font-style: normal;
+      margin: 2px;
+      color: #F8ADA3; }
+    .cake-index-newproducts .cake-newproducts-details .cake-newproduct-info p {
+      margin-top: 30px; }
+    .cake-index-newproducts .cake-newproducts-details .cake-newproduct-info button {
+      width: 138px;
+      height: 30px;
+      margin-top: 30px;
+      border: 1px solid #777777;
+      color: #777777;
+      border-radius: 15px;
+      outline: none; }
+      .cake-index-newproducts .cake-newproducts-details .cake-newproduct-info button:hover {
+        color: #F8ADA3; }
+  .cake-index-newproducts .cake-newproducts-details .cake-newproducts-image img {
+    width: 100%; }
+
+  .cake-index-brand {
+    height: 600px; }
+    .cake-index-brand .cake-brand-title {
+      margin-bottom: 50px; }
+      .cake-index-brand .cake-brand-title h4 {
+        height: 40px;
+        text-align: center;
+        font-size: 28px;
+        color: #353535; }
+        .cake-index-brand .cake-brand-title h4::after {
+          content: 'Brand';
+          display: block;
+          height: 16px;
+          margin-top: 10px;
+          font-size: 12px;
+          color: #777777;
+          text-align: center; }
+    .cake-index-brand .cake-brand-details {
+      position: relative; }
+      .cake-index-brand .cake-brand-details p {
+        position: absolute;
+        top: 78%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        height: 140px;
+        background-color: #FFFFFF;
+        padding-top: 20px;
+        text-align: center;
+        color: #777777;
+        line-height: 2;
+        box-sizing: border-box; }
+      .cake-index-brand .cake-brand-details button {
+        position: absolute;
+        top: 440px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        height: 50px;
+        border: 0;
+        background-color: #F5F5F5;
+        color: #777777;
+        font-size: 16px;
+        border-radius: 25px;
+        outline: none; }
+        .cake-index-brand .cake-brand-details button:hover {
+          background-color: #F8ADA3;
+          color: #fff; }
+
+  .cake-index-news {
+    background-color: #F5F5F5; }
+    .cake-index-news .cake-news-title {
+      margin-bottom: 50px;
+      padding-top: 50px; }
+      .cake-index-news .cake-news-title h4 {
+        height: 40px;
+        text-align: center;
+        font-size: 28px;
+        color: #353535; }
+        .cake-index-news .cake-news-title h4::after {
+          content: 'News';
+          display: block;
+          height: 16px;
+          margin-top: 10px;
+          font-size: 12px;
+          color: #777777;
+          text-align: center; }
+    .cake-index-news .cake-news-details {
+      padding-bottom: 60px; }
+      .cake-index-news .cake-news-details .cake-card-title {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px; }
+        .cake-index-news .cake-news-details .cake-card-title a {
+          color: #777777;
+          text-decoration: none; }
+      .cake-index-news .cake-news-details .cake-card-text {
+        color: #777777; }
+      .cake-index-news .cake-news-details .cake-card-link {
+        text-align: right; }
+        .cake-index-news .cake-news-details .cake-card-link a {
+          color: #777777;
+          text-decoration: none; }
+          .cake-index-news .cake-news-details .cake-card-link a:hover {
+            color: #F8ADA3; } }
+.cake-index-banner {
+  width: 100%; }
+  .cake-index-banner img {
+    width: 100%; }
+
+.cake-one-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.cake-more-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical; }
+
+/*# sourceMappingURL=index.css.map */

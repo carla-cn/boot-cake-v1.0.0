@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- header.css -->
+    <link rel="stylesheet" href="css/header.css">
+    <!-- index.css -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- footer.css -->
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 页头部分 -->
+    <header>
+        <nav class="cake-navbar navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <!-- 蛋糕图标 -->
+                <a class="cake-navbar-brand navbar-brand" href="./index.html">
+                    <img src="./images/index/icon.png" alt="">
+                </a>
+                <!-- 中英切换按钮 -->
+                <span class="cake-change-lang">EN</span>
+                <!-- 折叠按钮 -->
+                <button class="cake-navbar-toggler navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="cake-navbar-toggler-icon navbar-toggler-icon"></span>
+                </button>
+                <!-- 折叠部分 -->
+                <div class="cake-collapse collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <!-- 首页 -->
+                        <li class="active nav-item">
+                            <a class="cake-active cake-nav-link nav-link" href="./index.html">首页<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <!-- 品牌 -->
+                        <li class="nav-item dropdown">
+                            <a class="cake-nav-link nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                品牌
+                            </a>
+                            <div class="cake-header-brand-menu dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">公司简介</a>
+                                <a class="dropdown-item" href="#">发展历程</a>
+                                <a class="dropdown-item" href="#">团队</a>
+                            </div>
+                        </li>
+                        <!-- 新品 -->
+                        <li class="nav-item">
+                            <a class="cake-nav-link nav-link" href="./newpro.html">新品</a>
+                        </li>
+                        <!-- 联系 -->
+                        <li class="nav-item">
+                            <a class="cake-nav-link nav-link" href="#">联系</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- 大轮播横幅 -->
+    <div class="container">
+        <div class="cake-index-banner">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/banner/banner.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/banner/banner.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="blank20"></div>
+    <div class="blank25"></div>
+    <!-- 产品 -->
+    <div class="cake-index-products">
+        <!-- 标题 -->
+        <div class="cake-products-title">
+            <h4>产品</h4>
+        </div>
+        <!-- 产品种类导航nav -->
+        <!-- PC -->
+        <div class="container pc">
+            <div class="cake-products-category">
+                <nav>
+                    <div class="cake-category-nav nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                            aria-controls="nav-home" aria-selected="true">所有</a>
+                        <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                            aria-controls="nav-profile" aria-selected="false">乳脂蛋糕</a>
+                        <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                            aria-controls="nav-contact" aria-selected="false">巧克力蛋糕</a>
+                        <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact1" role="tab"
+                            aria-controls="nav-contact" aria-selected="false">慕斯蛋糕</a>
+                        <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact2" role="tab"
+                            aria-controls="nav-contact" aria-selected="false">芝士蛋糕</a>
+                        <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact3" role="tab"
+                            aria-controls="nav-contact" aria-selected="false">水果蛋糕</a>
+                        <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact4" role="tab"
+                            aria-controls="nav-contact" aria-selected="false">无糖蛋糕</a>
+                    </div>
+                </nav>
+                <div class="cake-category-content tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="cake-row-1">
+                            <div class="cake-col-3">
+                                <div class="pic">
+                                    <img src="./images/products/products-1.jpg" alt="">
+                                    <div class="mask">
+                                        <h5>尼斯湖的秘密</h5>
+                                        <p>乳脂蛋糕</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cake-col-2">
+                                <div class="pic">
+                                    <img src="./images/products/products-2.jpg" alt="">
+                                    <div class="mask">
+                                        <h5>尼斯湖的秘密</h5>
+                                        <p>乳脂蛋糕</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cake-col-2">
+                                <div class="pic">
+                                    <img src="./images/products/products-3.jpg" alt="">
+                                    <div class="mask">
+                                        <h5>尼斯湖的秘密</h5>
+                                        <p>巧克力蛋糕</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cake-col-2">
+                                <div class="pic">
+                                    <img src="./images/products/products-4.jpg" alt="">
+                                    <div class="mask">
+                                        <h5>尼斯湖的秘密</h5>
+                                        <p>慕斯蛋糕</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cake-col-3">
+                                <div class="pic">
+                                    <img src="./images/products/products-5.jpg" alt="">
+                                    <div class="mask">
+                                        <h5>尼斯湖的秘密</h5>
+                                        <p>慕斯蛋糕</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cake-row-2">
+                            <div class="cake-col-3">
+                                <div class="pic">
+                                    <img src="./images/products/products-6.jpg" alt="">
+                                    <div class="mask">
+                                        <h5>尼斯湖的秘密</h5>
+                                        <p>芝士蛋糕</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cake-col-2">
+                                <div class="pic">
+                                    <img src="./images/products/products-7.jpg" alt="">
+                                    <div class="mask">
+                                        <h5>尼斯湖的秘密</h5>
+                                        <p>芝士蛋糕</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cake-col-2">
+                                <div class="pic">
+                                    <img src="./images/products/products-8.jpg" alt="">
+                                    <div class="mask">
+                                        <h5>尼斯湖的秘密</h5>
+                                        <p>芝士蛋糕</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cake-col-2">
+                                <div class="pic">
+                                    <img src="./images/products/products-9.jpg" alt="">
+                                    <div class="mask">
+                                        <h5>尼斯湖的秘密</h5>
+                                        <p>水果蛋糕</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cake-col-3">
+                                <div class="pic">
+                                    <img src="./images/products/products-10.jpg" alt="">
+                                    <div class="mask">
+                                        <h5>尼斯湖的秘密</h5>
+                                        <p>无糖蛋糕</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="cake-row-1">
+                            <div class="cake-col-3">
+                                <div class="pic">
+                                    <img src="./images/products/products-1.jpg" alt="">
+                                    <div class="mask">
+                                        <h5>尼斯湖的秘密</h5>
+                                        <p>乳脂蛋糕</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cake-col-2">
+                                <div class="pic">
+                                    <img src="./images/products/products-2.jpg" alt="">
+                                    <div class="mask">
+                                        <h5>尼斯湖的秘密</h5>
+                                        <p>乳脂蛋糕</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <div class="cake-row-1">
+                            <div class="cake-col-2">
+                                <div class="pic">
+                                    <img src="./images/products/products-3.jpg" alt="">
+                                    <div class="mask">
+                                        <h5>尼斯湖的秘密</h5>
+                                        <p>巧克力蛋糕</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact1" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <div class="cake-row-1">
+                            <div class="cake-col-2">
+                                <div class="pic">
+                                    <img src="./images/products/products-4.jpg" alt="">
+                                    <div class="mask">
+                                        <h5>尼斯湖的秘密</h5>
+                                        <p>慕斯蛋糕</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cake-col-3">
+                                <div class="pic">
+                                    <img src="./images/products/products-5.jpg" alt="">
+                                    <div class="mask">
+                                        <h5>尼斯湖的秘密</h5>
+                                        <p>慕斯蛋糕</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact2" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <div class="cake-row-1">
+                            <div class="cake-col-3">
+                                <div class="pic">
+                                    <img src="./images/products/products-6.jpg" alt="">
+                                    <div class="mask">
+                                        <h5>尼斯湖的秘密</h5>
+                                        <p>芝士蛋糕</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cake-col-2">
+                                <div class="pic">
+                                    <img src="./images/products/products-7.jpg" alt="">
+                                    <div class="mask">
+                                        <h5>尼斯湖的秘密</h5>
+                                        <p>芝士蛋糕</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cake-col-2">
+                                <div class="pic">
+                                    <img src="./images/products/products-8.jpg" alt="">
+                                    <div class="mask">
+                                        <h5>尼斯湖的秘密</h5>
+                                        <p>芝士蛋糕</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact3" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <div class="cake-row-1">
+                            <div class="cake-col-2">
+                                <div class="pic">
+                                    <img src="./images/products/products-9.jpg" alt="">
+                                    <div class="mask">
+                                        <h5>尼斯湖的秘密</h5>
+                                        <p>水果蛋糕</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact4" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <div class="cake-row-1">
+                            <div class="cake-col-3">
+                                <div class="pic">
+                                    <img src="./images/products/products-10.jpg" alt="">
+                                    <div class="mask">
+                                        <h5>尼斯湖的秘密</h5>
+                                        <p>无糖蛋糕</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 移动端 -->
+        <div class="mobile">
+            <div class="cake-products-category">
+                <div class="row mt-2">
+                    <div class="col-6 p-0">
+                        <img src="./images/products/products-1.jpg" alt="">
+                    </div>
+                    <div class="col-6 p-0">
+                        <img src="./images/products/products-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-6 p-0">
+                        <img src="./images/products/products-3.jpg" alt="">
+                    </div>
+                    <div class="col-6 p-0">
+                        <img src="./images/products/products-4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-6 p-0">
+                        <img src="./images/products/products-5.jpg" alt="">
+                    </div>
+                    <div class="col-6 p-0">
+                        <img src="./images/products/products-6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-6 p-0">
+                        <img src="./images/products/products-7.jpg" alt="">
+                    </div>
+                    <div class="col-6 p-0">
+                        <img src="./images/products/products-8.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-6 p-0">
+                        <img src="./images/products/products-9.jpg" alt="">
+                    </div>
+                    <div class="col-6 p-0">
+                        <img src="./images/products/products-10.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blank20"></div>
+    <div class="blank20"></div>
+    <div class="blank20"></div>
+    <!-- 新品 -->
+    <div class="container">
+        <div class="cake-index-newproducts">
+            <!-- 标题 -->
+            <div class="cake-newproducts-title">
+                <h4>新品</h4>
+            </div>
+            <!-- 内容 -->
+            <div class="cake-newproducts-details">
+                <div class="row">
+                    <div class="cake-newproduct-info col-lg-6 p-0">
+                        <h4>尼斯湖的秘密</h4>
+                        <span>甜度：<i></i><i></i><i></i><i></i><i></i></span>
+                        <p>食材：黑巧克力(比利时)、乳脂奶油(新西兰)、白兰地(法国)<br>保鲜条件：0－4℃保藏12小时，10℃最佳食用</p>
+                        <button>查看详情</button>
+                    </div>
+                    <div class="cake-newproducts-image col-lg-6 p-0">
+                        <img src="./images/products/new-products-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cake-newproducts-image col-lg-6 p-0">
+                        <img src="./images/products/new-products-2.jpg" alt="">
+                    </div>
+                    <div class="cake-newproduct-info col-lg-6 p-0">
+                        <h4>尼斯湖的秘密</h4>
+                        <span>甜度：<i></i><i></i><i></i><i></i><i></i></span>
+                        <p>食材：黑巧克力(比利时)、乳脂奶油(新西兰)、白兰地(法国)<br>保鲜条件：0－4℃保藏12小时，10℃最佳食用</p>
+                        <button>查看详情</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blank20"></div>
+    <div class="blank20"></div>
+    <div class="blank20"></div>
+    <!-- 品牌 -->
+    <div class="cake-index-brand">
+        <!-- 标题 -->
+        <div class="cake-brand-title">
+            <h4>品牌</h4>
+        </div>
+        <!-- 内容 -->
+        <div class="container cake-brand-details">
+            <img src="./images/index/brand.jpg" alt="" class="w-100">
+            <p>Cake我们由国内外顶级蛋糕大师一起组成<br>
+                我们坚持在食材不应季，不符合采购标准的时候，让所涉及产品下线。<br>
+                为保证部分经典款支持预订，我们与世界不同水果产区建立联系，利用交替成熟季获取满意的食材<br>...
+            </p>
+            <button>查看详情</button>
+        </div>
+    </div>
+    <div class="blank20"></div>
+    <div class="blank20"></div>
+    <div class="blank20"></div>
+    <!-- 新闻 -->
+    <div class="cake-index-news pc">
+        <!-- 标题 -->
+        <div class="cake-news-title">
+            <h4>新闻</h4>
+        </div>
+        <!-- 内容 -->
+        <div class="container">
+            <div class="cake-news-details row ">
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/products/news-1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="cake-card-title"><a href="#">世界上最著名的10大蛋糕</a></h5>
+                            <p class="cake-card-text card-text">德国最为出名的就是味道浓郁的黑森林蛋糕，融合了樱桃的酸、奶油的甜、巧克力的苦、樱桃酒的醇香。</p>
+                            <p class="cake-card-link"><a href="#">查看详情</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/products/news-2.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="cake-card-title"><a href="#">最先进的消遣派蛋糕设备</a></h5>
+                            <p class="cake-card-text card-text cake-more-ellipsis">本公司是集科研设计 、生产制造、安装调试及提供工艺配方为一体的实业公司，专门从事曲奇机、威化饼干机、饼干、糕点、巧克力、糖果等食品</p>
+                            <p class="cake-card-link"><a href="#">查看详情</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/products/news-3.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="cake-card-title"><a href="#">七彩蛋糕制作方法</a></h5>
+                            <p class="cake-card-text card-text">德国最为出名的就是味道浓郁的黑森林蛋糕，融合了樱桃的酸、奶油的甜、巧克力的苦、樱桃酒的醇香。</p>
+                            <p class="cake-card-link"><a href="#">查看详情</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/products/news-4.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="cake-card-title cake-one-ellipsis"><a href="#">减肥季节最爱脱脂酸奶蛋糕，清凉细滑轻乳酪的口感</a></h5>
+                            <p class="cake-card-text card-text">德国最为出名的就是味道浓郁的黑森林蛋糕，融合了樱桃的酸、奶油的甜、巧克力的苦、樱桃酒的醇香。</p>
+                            <p class="cake-card-link"><a href="#">查看详情</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页尾部分 -->
+    <footer>
+        <div class="cake-footer-top">
+            <div class="cake-footer-top-container container">
+                <div class="row">
+                    <!-- 联系我们 -->
+                    <div class="cake-footer-contact col-lg-4">
+                        <h4 class="cake-footer-none">联系我们</h4>
+                        <!-- 位置 -->
+                        <div class="cake-footer-address">
+                            <h5 class="cake-footer-title">ADDRESS</h5>
+                            <p class="cake-footer-details">深圳市南山区南海大道3003号阳光华艺大厦A座6D</p>
+                        </div>
+                        <!-- 电话 -->
+                        <div class="cake-footer-phone">
+                            <h5 class="cake-footer-title">LANDELINE</h5>
+                            <p class="cake-footer-details">0755-82940957 0755-86308026</p>
+                        </div>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="cake-footer-brand cake-footer-none col-lg-2">
+                        <h4>品牌</h4>
+                        <div class="cake-footer-branditem">
+                            <p>公司简介</p>
+                            <p>发展历程</p>
+                            <p>团队</p>
+                        </div>
+                    </div>
+                    <!-- 产品 -->
+                    <div class="cake-footer-product cake-footer-none col-lg-2">
+                        <h4>产品</h4>
+                        <div class="cake-footer-productitem">
+                            <p>乳脂蛋糕</p>
+                            <p>巧克力蛋糕</p>
+                            <p>慕斯蛋糕</p>
+                            <p>芝士蛋糕</p>
+                            <p>水果蛋糕</p>
+                        </div>
+                    </div>
+                    <!-- 新闻 -->
+                    <div class="cake-footer-news cake-footer-none col-lg-2">
+                        <h4>新闻</h4>
+                        <div class="cake-footer-newsitem">
+                            <p>公司动态</p>
+                            <p>行业新闻</p>
+                            <p>活动</p>
+                        </div>
+                    </div>
+                    <!-- 关注我们 -->
+                    <div class="cake-footer-focus col-lg-2">
+                        <h4 class="cake-footer-none">关注我们</h4>
+                        <!-- 扫二维码关注 -->
+                        <div class="cake-footer-qrcode">
+                            <img src="./images/footer/footer-qrcode.jpg" alt="">
+                            <p>CAKE微信公众号<br>扫码立即关注</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cake-footer-bottom">
+            <p class="cake-footer-none">友情链接：<a href="#">广州网站建设</a> | <a href="#">深圳网站建设</a></p>
+            <p>CAKE蛋糕官网——用心做好甜蜜 © 版权所有 粤ICP备14003285号-2 </p>
+        </div>
+    </footer>
+</body>
+
+</html>
